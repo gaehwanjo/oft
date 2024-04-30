@@ -9,7 +9,7 @@ from oft import KittiObjectDataset, OftNet, ObjectEncoder, visualize_objects
 def parse_args():
     parser = ArgumentParser()
 
-    parser.add_argument('model-path', type=str,
+    parser.add_argument('model_path', type=str,
                         help='path to checkpoint file containing trained model')
     parser.add_argument('-g', '--gpu', type=int, default=0,
                         help='gpu to use for inference (-1 for cpu)')
